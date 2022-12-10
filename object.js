@@ -8,15 +8,15 @@ const obj = {
     },
 };
 
-console.log(obj.name);
-console.log(obj["age"]);
-console.log(obj["random-key"]);
+// console.log(obj.name);
+// console.log(obj["age"]);
+// console.log(obj["random-key"]);
 
 obj.hobby = "Cricket";
-console.log(obj);
+// console.log(obj);
 
 delete obj.hobby; // delete key from the object
-console.log(obj);
+// console.log(obj);
 
 obj.sayMyName();
 
@@ -26,10 +26,12 @@ obj.sayMyName();
 for (const [key, values] of Object.entries(obj)) {
     console.log(key, values);
 }
+console.log("\n");
 
 for (const key of Object.keys(obj)) {
     console.log(key);
 }
+console.log("\n");
 
 for (const value of Object.values(obj)) {
     console.log(value);
